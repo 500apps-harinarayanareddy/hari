@@ -490,18 +490,21 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-<script>
-	 (function(c, o, n, v, r, p) {
-      p = o.getElementsByTagName('head')[0];
-      r = o.createElement('script');
-      r.async = 1;
-      r.src = n + v;
-      r.onload = () => {
-          c._we.init('9051017915258274','ap1')
-    };
-    p.appendChild(r);
-    })(window, document, 'https://infinity-public-js.500apps.com/', 'convertpath.min.js');
-</script>
+     <!-- schedule  widget begin -->
+    <script>
+      (async (s,ch,e,du,le) => {
+        du = ch.getElementsByTagName("head")[0];
+        le = ch.createElement("script");
+        le.async = 1;
+        le.src = e;
+        le.onload = async () => {
+          let data = await s.wg.init("schedule","ap1", 16958, 421, "schedulely", { width: "1000px", height: "650px" }, "sendType=iframe");
+        };
+        du.appendChild(le);
+      })(window, document,  "https://pushly.s3.ap-south-1.amazonaws.com/lib/widget.min.js");
+    </script>
+     <!-- schedule  widget end -->
+    
 </body>
 
 </html>
